@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            /* background-image: url("https://raw.github.com/Gokulraj1112/rx100/main/room.jpg");
+            background: no-repeat; */
+            /* background-color: black; */
+            /* border-radius: 100%; */
+           background-image: url("https://raw.github.com/Gokulraj1112/rx100/main/bb.webp");
+        }
+        .on{
+            position: relative;
+            left: 510px;
+            bottom: 450px;
+            height: 40px;
+            width: 40px;
+            
+        }
+      
+        .off{
+            position: relative;
+            left: 510px;
+            bottom: 400px;
+            height: 40px;
+            width: 40px;
+          
+        }
+        .b1{
+            height: 180px;
+            width: 100px;
+            border: 2px solid rgb(8, 8, 8);
+            position: relative;
+            left: 160px;
+            top: 150px;
+            border-radius: 100px;
+            }
+    </style>
+</head>
+<body>
+    <div class="box">
+<div class="b1" ><img id="B"src="https://raw.github.com/Gokulraj1112/rx100/main/IMG-20230715-WA0010.jpg" alt=""></div>
+    </div>
+    <button class="on" onclick="on()" >on</button><br>
+    <button class="off" onclick="off()" >off</button>
+   
+    <script>
+        function on(){
+            document.getElementById("B").src="https://raw.github.com/Gokulraj1112/rx100/main/IMG-20230715-WA0009.jpg"
+        }
+        function off(){
+            document.getElementById("B").src="https://raw.github.com/Gokulraj1112/rx100/main/IMG-20230715-WA0010.jpg"
+        }
+    </script>
+</body>
+</html>
